@@ -1,0 +1,93 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Money-Transfer",
+		"_postman_id": "c34dc4a3-a051-3427-f169-c149fc62587e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateTransaction",
+			"request": {
+				"url": "localhost:8080/transactions",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"source\": \"6908a462-74ab-4d24-92fd-a5ea8c08cac1\",\n\"target\": \"95819fa9-a7e5-4d36-92fb-5deeb4897a72\",\n\"amount\": 10\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CreateAccount",
+			"request": {
+				"url": "localhost:8080/accounts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"balance\":999}\n\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllAccounts",
+			"request": {
+				"url": "localhost:8080/accounts",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ProcessTransaction",
+			"request": {
+				"url": "localhost:8080/transactions/d391b387-5673-4828-afb4-917a6dee4211",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllTransactions",
+			"request": {
+				"url": "localhost:8080/transactions",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
