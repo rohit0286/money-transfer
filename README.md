@@ -9,6 +9,11 @@ Application starts webserver on http://localhost:8080 by default
  - **JUnit 5** - as a unit test framework
  - **Rest Assured** - for API tests
 
+Application can be build via maven:
+```sh
+mvn clean install
+```
+
 Application may be started from standalone jar:
 ```sh
 java -jar moneytransfer-1.0-SNAPSHOT-jar-with-dependencies.jar
