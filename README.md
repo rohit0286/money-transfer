@@ -1,13 +1,14 @@
 
-# moneytransfer
-Money Transfer webservice supporting concurrent calls
+# Money Transfer App
 
-Application starts webserver on http://localhost:8080 by default
+Application starts on http://localhost:8080 this can be configured in config.properties.
 
- - **Jetty** - as a server layer
+ - **Jetty** - as a server
  - **Jersey** - as a JAX-RS implementation
- - **JUnit 5** - as a unit test framework
- - **Rest Assured** - for API tests
+ - **JUnit 5** - for Unit testing
+ - **Mockito** - for mocking while unit testing
+ - **Rest Assured** - for API testing
+ - **Java** - Java version used in 11
 
 Application can be build via maven:
 ```sh
@@ -23,7 +24,7 @@ or as a maven goal
 ```sh
 mvn exec:java
 ```
-Postman collection of below API is provided: Money-Transfer.postman_collection.json
+Postman collection of below APIs is provided: Money-Transfer.postman_collection.json
 
 
 ## Account API - `/accounts`
